@@ -1,0 +1,23 @@
+# ninja log v7
+8	733	8029618130545925	graphi_autogen/timestamp	bdbff4f8cf3a3278
+8	733	8029618130545925	graphi_autogen/mocs_compilation.cpp	bdbff4f8cf3a3278
+8	733	8029618130545925	C:/Users/Admin/Documents/graphi/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug/graphi_autogen/timestamp	bdbff4f8cf3a3278
+8	733	8029618130545925	C:/Users/Admin/Documents/graphi/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug/graphi_autogen/mocs_compilation.cpp	bdbff4f8cf3a3278
+748	2411	8029618131541543	CMakeFiles/graphi.dir/main.cpp.obj	f466e45034edb6e3
+742	2477	8029618131481473	CMakeFiles/graphi.dir/graphi_autogen/mocs_compilation.cpp.obj	592625df1a28208b
+757	2742	8029618131641549	CMakeFiles/graphi.dir/crop.cpp.obj	95d743fba725a939
+763	2751	8029618131691506	CMakeFiles/graphi.dir/imagewidget.cpp.obj	c9064bfba4a3d31b
+753	3007	8029618131591557	CMakeFiles/graphi.dir/mainwindow.cpp.obj	8b3c139c175caa5f
+3008	3201	8029618154138338	graphi.exe	8f9031d06413239c
+77	285	8029618367259303	graphi_autogen/timestamp	bdbff4f8cf3a3278
+77	285	8029618367259303	graphi_autogen/mocs_compilation.cpp	bdbff4f8cf3a3278
+77	285	8029618367259303	C:/Users/Admin/Documents/graphi/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug/graphi_autogen/timestamp	bdbff4f8cf3a3278
+77	285	8029618367259303	C:/Users/Admin/Documents/graphi/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug/graphi_autogen/mocs_compilation.cpp	bdbff4f8cf3a3278
+287	2506	8029618369345209	CMakeFiles/graphi.dir/mainwindow.cpp.obj	8b3c139c175caa5f
+2506	2687	8029618391542835	graphi.exe	8f9031d06413239c
+71	282	8029618706379318	graphi_autogen/timestamp	bdbff4f8cf3a3278
+71	282	8029618706379318	graphi_autogen/mocs_compilation.cpp	bdbff4f8cf3a3278
+71	282	8029618706379318	C:/Users/Admin/Documents/graphi/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug/graphi_autogen/timestamp	bdbff4f8cf3a3278
+71	282	8029618706379318	C:/Users/Admin/Documents/graphi/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug/graphi_autogen/mocs_compilation.cpp	bdbff4f8cf3a3278
+283	2537	8029618708491290	CMakeFiles/graphi.dir/mainwindow.cpp.obj	8b3c139c175caa5f
+2538	2728	8029618731035683	graphi.exe	8f9031d06413239c
