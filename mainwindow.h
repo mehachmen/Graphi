@@ -26,6 +26,8 @@ private slots:
     void cropImage();
     void undoLastAction();
     void decreaseBrightness();
+    void rotateLeft();
+    void rotateRight();
 
 private:
     void updateDisplay();
@@ -39,6 +41,8 @@ private:
     QPushButton *invertButton;
     QPushButton *brightnessButton;
     QPushButton *brightnessMinusButton;
+    QPushButton *rotateLeftButton;
+    QPushButton *rotateRightButton;
     QPushButton *cropButton;
     QStack<QImage> history; // отмена
 

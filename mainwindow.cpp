@@ -6,6 +6,7 @@
 #include <QMessageBox>
 #include <QResizeEvent>
 #include <QColor>
+#include <QTransform> // для поворота
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
@@ -31,6 +32,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
     brightnessMinusButton = new QPushButton("Яркость -50");
 
+    rotateLeftButton = new QPushButton("↺ -90°");
+    rotateRightButton = new QPushButton("↻ +90°");
+
     cropButton = new QPushButton("Обрезать");
 
     saveButton = new QPushButton("Сохранить");
@@ -46,6 +50,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     buttonLayout->addWidget(brightnessButton);
 
     buttonLayout->addWidget(brightnessMinusButton);
+
+    buttonLayout->addWidget(rotateLeftButton);
+    buttonLayout->addWidget(rotateRightButton);
 
     buttonLayout->addWidget(cropButton);
 
@@ -80,6 +87,16 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
             &QPushButton::clicked,
             this,
             &MainWindow::decreaseBrightness);
+
+    connect(rotateLeftButton,
+            &QPushButton::clicked,
+            this,
+            &MainWindow::rotateLeft);
+
+    connect(rotateRightButton,
+            &QPushButton::clicked,
+            this,
+            &MainWindow::rotateRight);
 
     connect(cropButton,
             &QPushButton::clicked,
@@ -252,6 +269,45 @@ void MainWindow::decreaseBrightness()
 
     updateDisplay();
 }
+
+void MainWindow::rotateLeft()
+{
+    if (currentImage.isNull())
+        return;
+
+    history.push(currentImage);
+
+    QTransform transform;
+    transform.rotate(90);
+
+    currentImage =
+        currentImage.transformed(
+            transform,
+            Qt::SmoothTransformation
+            );
+
+    updateDisplay();
+}
+
+void MainWindow::rotateRight()
+{
+    if (currentImage.isNull())
+        return;
+
+    history.push(currentImage);
+
+    QTransform transform;
+    transform.rotate(-90);
+
+    currentImage =
+        currentImage.transformed(
+            transform,
+            Qt::SmoothTransformation
+            );
+
+    updateDisplay();
+}
+
 
 void MainWindow::cropImage()
 {
